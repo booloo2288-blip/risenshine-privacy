@@ -1,64 +1,194 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ro">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rise'N Shine — Privacy Policy</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politica de confidențialitate — Rise'N Shine</title>
 <style>
-  body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.6; }
-  h1 { color: #1a1a1a; }
-  h2 { color: #E8B86D; margin-top: 30px; }
+  :root{
+    --bg:#FAF7F2; --surface:#FFFFFF; --text:#20201D; --muted:#5E5B54;
+    --accent:#B08D3F; --line:#E4DDD1;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#171614; --surface:#1F1E1B; --text:#ECE7DE; --muted:#A9A396;
+      --accent:#D4B463; --line:#33312C;
+    }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:17px; line-height:1.65;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:48px 16px 96px}
+  header{border-bottom:1px solid var(--line); padding-bottom:24px; margin-bottom:32px}
+  .brand{font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); margin:0 0 10px}
+  h1{font-size:30px; line-height:1.2; margin:0 0 10px; font-weight:600}
+  .meta{color:var(--muted); font-size:15px; margin:0}
+  .lang{margin-top:18px; font-size:15px}
+  .lang a{color:var(--accent)}
+  h2{font-size:21px; margin:40px 0 12px; font-weight:600; line-height:1.3}
+  h3{font-size:17px; margin:26px 0 8px; font-weight:600}
+  p,li{color:var(--text)}
+  ul{padding-left:22px}
+  li{margin:6px 0}
+  a{color:var(--accent)}
+  table{width:100%; border-collapse:collapse; margin:16px 0; font-size:15px}
+  th,td{text-align:left; padding:10px 10px; border-bottom:1px solid var(--line); vertical-align:top}
+  th{color:var(--muted); font-weight:600; font-size:13px; letter-spacing:.04em; text-transform:uppercase}
+  .box{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:18px 20px; margin:24px 0}
+  .box p{margin:0}
+  footer{margin-top:56px; padding-top:24px; border-top:1px solid var(--line); color:var(--muted); font-size:15px}
+  @media (max-width:520px){ body{font-size:16px} h1{font-size:25px} .wrap{padding:32px 16px 72px} }
 </style>
 </head>
 <body>
-<h1>Rise'N Shine — Privacy Policy</h1>
-<p><em>Last updated: March 2026</em></p>
+<div class="wrap">
 
-<h2>1. Who we are</h2>
-<p>Rise'N Shine is a mobile application that delivers personalized morning packages including motivational mottos, weather information, and music recommendations.</p>
+<header>
+  <p class="brand">Rise'N Shine</p>
+  <h1>Politica de confidențialitate</h1>
+  <p class="meta">Ultima actualizare: 12 octombrie 2026</p>
+  <p class="lang"><a href="./privacy-en.html">Read this page in English →</a> · <a href="./terms.html">Termeni și condiții</a></p>
+</header>
 
-<h2>2. Data we collect</h2>
-<p>We collect the following personal data that you provide directly:</p>
+<p>Rise'N Shine este o aplicație care îți livrează în fiecare dimineață, la ora aleasă de tine, un pachet personalizat: un mesaj motivațional, o imagine, o recomandare muzicală și vremea din orașul tău.</p>
+
+<p>Ca să facă asta, aplicația are nevoie de câteva informații despre tine. Documentul acesta explică exact care sunt, de ce sunt necesare, cui ajung și ce poți cere oricând să se întâmple cu ele.</p>
+
+<h2>1. Cine răspunde pentru datele tale</h2>
+
+<p>Operatorul de date, în sensul Regulamentului General privind Protecția Datelor (GDPR), este:</p>
+
 <ul>
-<li>Full name and email address</li>
-<li>Communication tone preference</li>
-<li>Interests and music preferences</li>
-<li>City (for weather data)</li>
-<li>Notification time preference</li>
-</ul>
-<p>We do NOT collect location data (GPS), social media data without explicit consent, or payment information (handled by Apple/Google).</p>
-
-<h2>3. How we use your data</h2>
-<p>Your data is used exclusively to generate your personalized daily morning package, send push notifications at your chosen time, and improve your experience.</p>
-
-<h2>4. Data storage</h2>
-<p>Your data is stored securely using Supabase (EU servers — Frankfurt, Germany), compliant with GDPR requirements. All data is encrypted at rest and in transit.</p>
-
-<h2>5. Your rights (GDPR)</h2>
-<p>Under GDPR, you have the right to access, correct, delete, and export your personal data. To delete your account and all data, use the Settings screen in the app. For other requests, contact us at privacy@risenshine.app</p>
-
-<h2>6. Third-party services</h2>
-<ul>
-<li>Supabase — database and authentication</li>
-<li>OpenAI — AI-generated content</li>
-<li>Open-Meteo — weather data</li>
-<li>Apple/Google — payment processing</li>
+  <li><strong>Gheorghe Albulescu</strong>, persoană fizică, România</li>
+  <li>Contact: <a href="mailto:ADRESA_EMAIL">ADRESA_EMAIL</a></li>
 </ul>
 
-<h2>7. Data retention</h2>
-<p>We retain your data for as long as your account is active. When you delete your account, all personal data is permanently deleted within 30 days.</p>
+<p>Rise'N Shine este dezvoltată și operată individual. La orice întrebare legată de datele tale răspunde aceeași persoană care scrie aplicația.</p>
 
-<h2>8. Delete your data</h2>
-<p>You can delete your account and all associated data directly from the Rise'N Shine app:</p>
-<ol>
-<li>Open Rise'N Shine</li>
-<li>Go to Settings</li>
-<li>Tap "Delete account"</li>
-<li>Confirm deletion</li>
-</ol>
-<p>All your data will be permanently deleted within 30 days. Alternatively, you can request data deletion by emailing: <a href="mailto:privacy@risenshine.app">privacy@risenshine.app</a></p>
+<h2>2. Ce date colectăm</h2>
 
-<h2>9. Contact</h2>
-<p>privacy@risenshine.app</p>
+<h3>2.1 Date de cont</h3>
+<ul>
+  <li>Adresa de e-mail și parola, necesare pentru autentificare. Parola este stocată criptat și nu poate fi citită de nimeni, nici de noi.</li>
+  <li>Numele tău, dacă alegi să-l introduci. Este folosit ca să ți se adreseze aplicația pe nume.</li>
+</ul>
+
+<h3>2.2 Preferințele pe care ni le spui</h3>
+<ul>
+  <li>Tonul pe care îl preferi, interesele tale, genurile muzicale</li>
+  <li>Orașul, pentru vreme</li>
+  <li>Ora de trezire, zilele active, formatul orei, limba</li>
+  <li>Genul, dacă alegi să-l completezi — folosit doar pentru a-ți arăta clipurile de exerciții potrivite. Poți să nu răspunzi; aplicația funcționează identic.</li>
+</ul>
+
+<h3>2.3 Date generate prin folosirea aplicației</h3>
+<ul>
+  <li>Datele sesiunilor de dimineață: ziua, durata, dacă ai ascultat vocea, dacă ai parcurs sesiunea până la capăt</li>
+  <li>Conținutul generat pentru tine: motto-ul zilei, reflecțiile săptămânale și însemnările pe care alegi să le păstrezi în jurnal</li>
+  <li>Evenimente tehnice de utilizare: ce ecrane s-au deschis, dacă o generare a reușit sau a eșuat, platforma și versiunea aplicației. Acestea folosesc un identificator de sesiune anonim și nu conțin numele, e-mailul sau adresa ta IP.</li>
+</ul>
+
+<h3>2.4 Notificări</h3>
+<p>Dacă accepți notificările, dispozitivul tău primește un identificator tehnic de notificare (un „token"). Este folosit exclusiv pentru a-ți trimite notificarea de dimineață la ora aleasă de tine.</p>
+
+<h3>2.5 Ce NU colectăm</h3>
+<div class="box">
+<p><strong>Nu colectăm date de sănătate.</strong> Aplicația nu citește somnul, pașii, pulsul sau orice altă informație din Health Connect ori din alte aplicații de sănătate. Nu cere permisiuni pentru asta.<br><br>
+<strong>Nu colectăm locația GPS.</strong> Pentru vreme folosim doar numele orașului pe care îl introduci tu.<br><br>
+<strong>Nu citim conturile tale de pe rețelele sociale</strong> și nu preluăm nicio postare.<br><br>
+<strong>Nu vindem datele tale</strong> nimănui, niciodată, sub nicio formă.</p>
+</div>
+
+<h2>3. De ce prelucrăm aceste date — temeiul legal</h2>
+
+<table>
+  <tr><th>Scop</th><th>Date folosite</th><th>Temei legal (GDPR)</th></tr>
+  <tr><td>Crearea și administrarea contului</td><td>E-mail, parolă, nume</td><td>Executarea contractului, Art. 6(1)(b)</td></tr>
+  <tr><td>Generarea pachetului zilnic personalizat</td><td>Preferințe, oraș, istoricul sesiunilor</td><td>Executarea contractului, Art. 6(1)(b)</td></tr>
+  <tr><td>Trimiterea notificării de dimineață</td><td>Token de notificare, ora aleasă</td><td>Consimțământ, Art. 6(1)(a)</td></tr>
+  <tr><td>Administrarea abonamentului</td><td>Starea abonamentului, identificator de cont</td><td>Executarea contractului, Art. 6(1)(b)</td></tr>
+  <tr><td>Îmbunătățirea aplicației</td><td>Evenimente tehnice anonimizate</td><td>Interes legitim, Art. 6(1)(f)</td></tr>
+</table>
+
+<p>Consimțământul pentru notificări poate fi retras oricând, din setările telefonului sau din aplicație. Retragerea nu afectează restul funcționării.</p>
+
+<h2>4. Cui ajung datele tale</h2>
+
+<p>Pentru ca aplicația să funcționeze, unele date trec prin servicii externe. Fiecare primește strictul necesar, nimic în plus.</p>
+
+<table>
+  <tr><th>Serviciu</th><th>Ce primește</th><th>Pentru ce</th></tr>
+  <tr><td><strong>Supabase</strong></td><td>Contul și toate datele descrise mai sus</td><td>Baza de date, autentificarea și stocarea fișierelor</td></tr>
+  <tr><td><strong>OpenAI</strong></td><td>Prenumele, preferințele și contextul zilei</td><td>Generarea mesajului motivațional și a reflecțiilor</td></tr>
+  <tr><td><strong>ElevenLabs</strong></td><td>Textul care urmează să fie citit cu voce tare</td><td>Transformarea textului în audio</td></tr>
+  <tr><td><strong>Open-Meteo</strong></td><td>Numele orașului</td><td>Prognoza meteo. Nu primește niciun identificator al tău.</td></tr>
+  <tr><td><strong>RevenueCat</strong> și <strong>Google Play Billing</strong></td><td>Un identificator de cont și starea abonamentului</td><td>Verificarea abonamentului. Datele cardului nu trec niciodată prin aplicație.</td></tr>
+  <tr><td><strong>Expo Push</strong> și <strong>Google FCM</strong></td><td>Token-ul de notificare</td><td>Livrarea notificării de dimineață</td></tr>
+</table>
+
+<p><strong>Spotify și YouTube Music:</strong> aplicația deschide linkuri către ele atunci când apeși pe o melodie. Nu le trimitem nicio informație despre tine. Ce se întâmplă după ce ai ajuns acolo intră sub politicile lor de confidențialitate.</p>
+
+<h3>Transferuri în afara Spațiului Economic European</h3>
+<p>Unii dintre furnizorii de mai sus își au sediul în Statele Unite. Transferurile de date către ei se realizează pe baza clauzelor contractuale standard aprobate de Comisia Europeană sau a unui alt mecanism de transfer prevăzut de GDPR, conform termenilor fiecărui furnizor.</p>
+
+<h2>5. Cât timp păstrăm datele</h2>
+
+<ul>
+  <li><strong>Cât timp contul tău este activ</strong> — păstrăm datele ca să îți putem livra dimineața și să păstrăm continuitatea profilului tău.</li>
+  <li><strong>După ștergerea contului</strong> — datele cu caracter personal sunt șterse definitiv în cel mult <strong>30 de zile</strong>.</li>
+  <li><strong>Evenimentele tehnice anonimizate</strong> pot fi păstrate mai mult, pentru statistici, pentru că nu mai pot fi legate de tine.</li>
+</ul>
+
+<h2>6. Drepturile tale</h2>
+
+<p>Conform GDPR, ai următoarele drepturi, și le poți exercita trimițând un e-mail la <a href="mailto:ADRESA_EMAIL">ADRESA_EMAIL</a>:</p>
+
+<ul>
+  <li><strong>Acces</strong> — să afli ce date avem despre tine</li>
+  <li><strong>Rectificare</strong> — să corectezi orice informație greșită</li>
+  <li><strong>Ștergere</strong> — să ceri eliminarea contului și a datelor. Se poate face și direct din aplicație, din Setări.</li>
+  <li><strong>Portabilitate</strong> — să primești datele tale într-un format pe care îl poți folosi în altă parte</li>
+  <li><strong>Opoziție și restricționare</strong> — să te opui anumitor prelucrări sau să ceri limitarea lor</li>
+  <li><strong>Retragerea consimțământului</strong> — oricând, fără să fie nevoie de o justificare</li>
+</ul>
+
+<p>Răspundem în cel mult 30 de zile. Dacă nu ești mulțumit de răspuns, ai dreptul să depui o plângere la <strong>Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP)</strong>, <a href="https://www.dataprotection.ro">www.dataprotection.ro</a>.</p>
+
+<h2>7. Securitate</h2>
+
+<ul>
+  <li>Toată comunicarea dintre aplicație și servere este criptată (HTTPS)</li>
+  <li>Parolele sunt stocate criptat, printr-o funcție ireversibilă</li>
+  <li>Accesul la date este restricționat la nivel de rând, astfel încât un cont să nu poată citi datele altui cont</li>
+  <li>Cheile de acces către serviciile externe sunt păstrate pe server și nu sunt incluse niciodată în aplicația instalată pe telefon</li>
+</ul>
+
+<p>Niciun sistem nu este absolut sigur. Dacă apare o breșă care îți pune în pericol datele, te anunțăm și notificăm autoritatea competentă în termenele prevăzute de lege.</p>
+
+<h2>8. Vârsta minimă</h2>
+
+<p>Rise'N Shine este destinată persoanelor de <strong>16 ani și peste</strong>. Nu colectăm cu bună știință date de la copii sub această vârstă. Dacă afli că un minor sub 16 ani și-a creat un cont, scrie-ne și îl ștergem.</p>
+
+<h2>9. Conținut generat automat</h2>
+
+<p>Mesajele motivaționale, reflecțiile și recomandările sunt generate de un model de inteligență artificială, pe baza preferințelor tale. Sunt destinate inspirației și bunăstării zilnice. <strong>Nu constituie sfat medical, psihologic sau terapeutic</strong> și nu înlocuiesc consultarea unui specialist.</p>
+
+<h2>10. Modificări ale acestei politici</h2>
+
+<p>Când aplicația se schimbă, se schimbă și documentul acesta. Data de la începutul paginii arată mereu ultima actualizare. Dacă apare o modificare importantă — de exemplu o categorie nouă de date — te anunțăm în aplicație înainte să intre în vigoare.</p>
+
+<h2>11. Contact</h2>
+
+<p>Pentru orice întrebare legată de datele tale: <a href="mailto:ADRESA_EMAIL">ADRESA_EMAIL</a></p>
+
+<footer>
+  <p>Rise'N Shine · Operator: Gheorghe Albulescu, România · Ultima actualizare: 12 octombrie 2026</p>
+  <p><a href="./privacy-en.html">English</a> · <a href="./terms.html">Termeni și condiții</a> · <a href="./terms-en.html">Terms (EN)</a></p>
+</footer>
+
+</div>
 </body>
 </html>
